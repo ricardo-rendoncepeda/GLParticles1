@@ -1,6 +1,6 @@
 README
 
-GLParticles1 Version 1.1 (18 June 2013)
+GLParticles1 Version 1.2 (06 October 2013)
 Created by Ricardo Rendon Cepeda
 <http://www.rendoncepeda.com/>
 
@@ -19,6 +19,11 @@ The full project includes:
 
 
 VERSION HISTORY
+
+Version 1.2
+---------------
+- Project upgraded to iOS 7.
+- Added image asset catalogs.
 
 Version 1.1
 ---------------

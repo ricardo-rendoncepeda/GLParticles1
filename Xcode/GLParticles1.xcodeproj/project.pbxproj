@@ -13,9 +13,6 @@
 		AE120EFE1732C2DA00244B0B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AE120EFC1732C2DA00244B0B /* InfoPlist.strings */; };
 		AE120F001732C2DA00244B0B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AE120EFF1732C2DA00244B0B /* main.m */; };
 		AE120F041732C2DA00244B0B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AE120F031732C2DA00244B0B /* AppDelegate.m */; };
-		AE120F061732C2DA00244B0B /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = AE120F051732C2DA00244B0B /* Default.png */; };
-		AE120F081732C2DA00244B0B /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AE120F071732C2DA00244B0B /* Default@2x.png */; };
-		AE120F0A1732C2DA00244B0B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AE120F091732C2DA00244B0B /* Default-568h@2x.png */; };
 		AE120F111732C35300244B0B /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE120F101732C35300244B0B /* OpenGLES.framework */; };
 		AE120F131732C35A00244B0B /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE120F121732C35A00244B0B /* GLKit.framework */; };
 		AE120F151732C38E00244B0B /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE120F141732C38E00244B0B /* MainStoryboard.storyboard */; };
@@ -25,6 +22,7 @@
 		AE120F301732CE2A00244B0B /* texture_16.png in Resources */ = {isa = PBXBuildFile; fileRef = AE120F2D1732CE2A00244B0B /* texture_16.png */; };
 		AE120F311732CE2A00244B0B /* texture_32.png in Resources */ = {isa = PBXBuildFile; fileRef = AE120F2E1732CE2A00244B0B /* texture_32.png */; };
 		AE120F321732CE2A00244B0B /* texture_64.png in Resources */ = {isa = PBXBuildFile; fileRef = AE120F2F1732CE2A00244B0B /* texture_64.png */; };
+		AE35BB711802088000607B58 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE35BB701802088000607B58 /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +54,7 @@
 		AE120F2D1732CE2A00244B0B /* texture_16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = texture_16.png; sourceTree = "<group>"; };
 		AE120F2E1732CE2A00244B0B /* texture_32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = texture_32.png; sourceTree = "<group>"; };
 		AE120F2F1732CE2A00244B0B /* texture_64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = texture_64.png; sourceTree = "<group>"; };
+		AE35BB701802088000607B58 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +105,7 @@
 		AE120EF91732C2DA00244B0B /* GLParticles1 */ = {
 			isa = PBXGroup;
 			children = (
+				AE35BB701802088000607B58 /* Images.xcassets */,
 				AE120F021732C2DA00244B0B /* AppDelegate.h */,
 				AE120F031732C2DA00244B0B /* AppDelegate.m */,
 				AE120F141732C38E00244B0B /* MainStoryboard.storyboard */,
@@ -215,10 +215,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE35BB711802088000607B58 /* Images.xcassets in Resources */,
 				AE120EFE1732C2DA00244B0B /* InfoPlist.strings in Resources */,
-				AE120F061732C2DA00244B0B /* Default.png in Resources */,
-				AE120F081732C2DA00244B0B /* Default@2x.png in Resources */,
-				AE120F0A1732C2DA00244B0B /* Default-568h@2x.png in Resources */,
 				AE120F151732C38E00244B0B /* MainStoryboard.storyboard in Resources */,
 				AE120F301732CE2A00244B0B /* texture_16.png in Resources */,
 				AE120F311732CE2A00244B0B /* texture_32.png in Resources */,
@@ -314,9 +312,12 @@
 		AE120F0E1732C2DA00244B0B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GLParticles1/GLParticles1-Prefix.pch";
 				INFOPLIST_FILE = "GLParticles1/GLParticles1-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				OTHER_LDFLAGS = "-ObjC++";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -326,9 +327,12 @@
 		AE120F0F1732C2DA00244B0B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GLParticles1/GLParticles1-Prefix.pch";
 				INFOPLIST_FILE = "GLParticles1/GLParticles1-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				OTHER_LDFLAGS = "-ObjC++";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
